@@ -71,6 +71,50 @@ class _MyAppScreen extends State<MyAppScreen> {
                   ]))),
         ),
         Positioned(
+          right: 267.0,
+          width: 70.0,
+          bottom: 25.0,
+          height: 70.0,
+          child: CounterButtonCustom(
+              child: Container(
+                  decoration: BoxDecoration(),
+                  child: Stack(children: [
+                    Positioned(
+                      left: 0,
+                      width: 70.0,
+                      top: 0,
+                      height: 70.0,
+                      child: Image.asset(
+                        'assets/images/ellipse1.png',
+                        package: 'counter_app',
+                        height: 70.0,
+                        width: 70.0,
+                        fit: BoxFit.none,
+                      ),
+                    ),
+                    Positioned(
+                      left: 14.0,
+                      width: 41.0,
+                      top: 0,
+                      height: 70.0,
+                      child: Container(
+                          height: 70.0,
+                          width: 41.0,
+                          child: AutoSizeText(
+                            '<',
+                            style: TextStyle(
+                              fontFamily: 'Sanchez',
+                              fontSize: 48,
+                              fontWeight: FontWeight.w400,
+                              letterSpacing: 0,
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          )),
+                    ),
+                  ]))),
+        ),
+        Positioned(
           left: MediaQuery.of(context).size.width * 0.101,
           width: MediaQuery.of(context).size.width * 0.813,
           top: MediaQuery.of(context).size.height * 0.474,
