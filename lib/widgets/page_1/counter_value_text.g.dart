@@ -44,7 +44,7 @@ class _CounterValueText extends State<CounterValueText> {
                     fontSize: 32,
                     fontWeight: FontWeight.w400,
                     letterSpacing: 0,
-                    color: Color(0xff3598fb),
+                    color: Color(0xfffb35c4),
                   ),
                   textAlign: TextAlign.center,
                 )),
