@@ -31,45 +31,51 @@ class _MyAppScreen2 extends State<MyAppScreen2> {
           left: 0,
           width: 375.0,
           top: 0,
-          height: 95.0,
+          height: 65.0,
           child: HeaderCustom(
               child: Container(
-                  decoration: BoxDecoration(),
-                  child: Stack(children: [
-                    Positioned(
-                      left: 0,
-                      width: 375.0,
-                      top: 0,
-                      height: 95.0,
-                      child: Image.asset(
-                        'assets/images/background.png',
-                        package: 'counter_app',
-                        height: 95.0,
-                        width: 375.0,
-                        fit: BoxFit.none,
-                      ),
+                  padding: EdgeInsets.only(
+                    left: 57,
+                    right: 57,
+                    top: 19,
+                    bottom: 19,
+                  ),
+                  width: 375.0,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment(2.0, 0.0),
+                      end: Alignment(0.0, -2.0),
+                      colors: <Color>[
+                        Color(0xff3598fb),
+                        Color(0xff3656c3),
+                      ],
+                      stops: [
+                        0,
+                        1,
+                      ],
+                      tileMode: TileMode.clamp,
                     ),
-                    Positioned(
-                      left: 64.0,
-                      width: 254.0,
-                      top: 48.0,
-                      height: 28.0,
-                      child: Container(
-                          height: 28.0,
-                          width: 254.0,
-                          child: AutoSizeText(
-                            'Flutter Counter 2',
-                            style: TextStyle(
-                              fontFamily: 'Sanchez',
-                              fontSize: 21,
-                              fontWeight: FontWeight.w400,
-                              letterSpacing: 0,
-                              color: Colors.white,
-                            ),
-                            textAlign: TextAlign.center,
-                          )),
-                    ),
-                  ]))),
+                  ),
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                            height: 27.0,
+                            width: MediaQuery.of(context).size.width *
+                                0.4613333333333333,
+                            child: AutoSizeText(
+                              'Flutter Counter 2',
+                              style: TextStyle(
+                                fontFamily: 'Sanchez',
+                                fontSize: 21,
+                                fontWeight: FontWeight.w400,
+                                letterSpacing: 0,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )),
+                      ]))),
         ),
         Positioned(
           right: 32.0,
