@@ -91,8 +91,8 @@ class _MyAppScreen extends State<MyAppScreen> {
               )),
         ),
         Positioned(
-          left: MediaQuery.of(context).size.width * 0.317,
-          width: MediaQuery.of(context).size.width * 0.363,
+          left: MediaQuery.of(context).size.width * 0.443,
+          width: MediaQuery.of(context).size.width * 0.131,
           top: MediaQuery.of(context).size.height * 0.555,
           height: MediaQuery.of(context).size.height * 0.053,
           child: CounterValueHolderCustom(
@@ -101,7 +101,7 @@ class _MyAppScreen extends State<MyAppScreen> {
                   child: Stack(children: [
                     Positioned(
                       left: 0,
-                      width: 136.0,
+                      width: 49.0,
                       top: 0,
                       height: 43.0,
                       child: LayoutBuilder(builder: (context, constraints) {
